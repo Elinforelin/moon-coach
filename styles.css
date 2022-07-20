@@ -1,0 +1,633 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #f5f5f5;
+  font-family: "Oxygen";
+  color: #333333;
+}
+[class*="__container"] {
+  max-width: 1440px;
+  margin: 0px auto;
+  box-sizing: content-box;
+  padding: 0 15px;
+}
+._ibj img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.wrapper {
+}
+.header {
+}
+.header__container {
+  min-height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333333;
+}
+.headers__menu {
+}
+.menu {
+  width: 1125px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu__img {
+  padding: 0 9px;
+}
+.menu__links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: #222222;
+  line-height: 125%;
+  font-weight: 400;
+}
+.menu__item-bird {
+  margin: 0 31px 0 10px;
+}
+.menu__item:last-child {
+  margin: 0 40px 0 0;
+}
+.header__getOn {
+  min-width: 254px;
+  text-align: center;
+  border-left: 1px solid #333333;
+  line-height: 79px;
+}
+
+@media (max-width: 950px) {
+  .menu {
+    justify-content: center;
+  }
+  .header__getOn span {
+    margin: 0 0 0 24px;
+  }
+  .menu__img {
+    margin: 10px 0 10px 0;
+  }
+  .menu__item {
+    padding: 0 0 10px 0;
+  }
+  .header__getOn {
+    line-height: 89px;
+  }
+}
+@media (max-width: 754px) {
+  .header__getOn {
+    min-width: 150px;
+  }
+  .menu__item:last-child {
+    margin: 0 20px 0 0;
+  }
+  .menu__item {
+    text-align: center;
+  }
+  .menu__item-bird {
+    margin: 0 20px 0 5px;
+  }
+}
+
+@media (max-width: 573px) {
+  .menu__item {
+    font-size: 14px;
+  }
+  .header__getOn {
+    font-size: 14px;
+    min-width: 120px;
+    line-height: 108px;
+  }
+}
+
+@media (max-width: 425px) {
+  .menu__links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .header__getOn {
+    line-height: 118px;
+  }
+}
+
+.minimalistic {
+}
+.minimalistic__container {
+  max-width: 761px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.minimalistic__title {
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 115%;
+  margin: 92px 0 0 0;
+}
+.minimalistic__subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 165%;
+  margin: 29px 0 0 0;
+}
+.minimalistic__button {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0 80px 0;
+}
+.button {
+  background: #333333;
+  width: 242px;
+  color: #efeee8;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 64px;
+  align-items: center;
+  font-size: 18px;
+}
+.button__explore {
+  color: #efeee8;
+}
+.button-arrow {
+}
+.minimalistic__button-arrow {
+  margin: 0 0 0 50px;
+  align-items: center;
+}
+
+@media (max-width: 649px) {
+  .minimalistic__title {
+    margin: 52px 0 0 0;
+    font-size: 50px;
+  }
+}
+@media (max-width: 573px) {
+  .minimalistic__title {
+    font-size: 45px;
+  }
+  .minimalistic__subtitle {
+    font-size: 19px;
+  }
+  .button__explore {
+    margin: 0 0 40px 0;
+  }
+}
+
+.pagesBlock {
+  background-color: #333333;
+}
+.pagesBlock__container {
+  max-width: 1240px;
+  max-height: 700px;
+}
+.pagesBlock__items {
+  display: grid;
+  grid-template-areas:
+    "b a ."
+    "b a c";
+  margin: 0 auto;
+  text-align: center;
+}
+.item {
+}
+.item__img4 {
+  position: relative;
+  top: -144px;
+}
+.item__img5 {
+  position: relative;
+  top: 28px;
+}
+.item__img3 {
+  position: relative;
+  top: 121px;
+}
+
+@media (max-width: 1250px) {
+  .pagesBlock__container {
+    max-height: 950px;
+  }
+  .pagesBlock__items {
+    grid-template-areas:
+      "b a"
+      "b a";
+  }
+  .item__img4 {
+    position: relative;
+    top: 107px;
+  }
+  .item__img5 {
+    position: relative;
+    top: -110px;
+  }
+  .item__img3 {
+    position: relative;
+    top: -134px;
+  }
+}
+
+@media (max-width: 860px) {
+  .pagesBlock__container {
+    max-height: 1944px;
+  }
+  .pagesBlock__items {
+    grid-template-areas: none;
+  }
+  .item__img4 {
+    position: sticky;
+  }
+  .item__img5 {
+    position: sticky;
+  }
+  .item__img3 {
+    position: sticky;
+  }
+}
+
+.facts {
+}
+.facts__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+.facts__img {
+  padding: 15px;
+  max-width: 634px;
+  max-height: 810px;
+}
+.facts__info {
+  max-width: 512px;
+  display: flex;
+  flex-direction: column;
+}
+.info {
+}
+.info__mainInfo {
+}
+
+.info__mainInfo-title {
+  margin: 159px 0 28px 0;
+
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+}
+.info__mainInfo-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 165%;
+  margin: 0 0 51px 0;
+}
+.info__template-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin: 0 0 31px 0;
+}
+.info__template {
+}
+.info__template-hr {
+  border-top: 1px solid #333333;
+  margin: 16px 0 18px 0;
+}
+
+.info__template-item {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 176%;
+}
+.info__button {
+}
+.button {
+}
+.button__template {
+  height: 48px;
+  width: 215px;
+  margin: 61px 0 105px 0;
+}
+.minimalistic__button-arrow {
+}
+
+@media (max-width: 1255px) {
+  .facts__img {
+    margin: 50px 0 0 50px;
+  }
+  .info__mainInfo {
+    margin: 50px 0 28px 0;
+  }
+  .facts__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.homepage {
+}
+.homepage__container {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+}
+.homepage__title {
+}
+.title {
+  align-items: center;
+  margin: 0 0 28px 0;
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+}
+.homepage__subtitle {
+  max-width: 634px;
+}
+.subtitle {
+  margin: 0 0 43px 0;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 165%;
+}
+.homepage__items {
+}
+.commonItems {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.item {
+}
+.commonItem {
+  display: flex;
+  flex-direction: column;
+  background: #e4e2d3;
+  padding: 24px 24px 26px 24px;
+}
+.item-homepage {
+}
+.item-photo {
+}
+.item-post {
+  margin: 22px 0 0 0;
+  align-items: flex-start;
+  text-align: start;
+}
+.common__hr {
+  border-top: 1px solid rgba(51, 51, 51, 0.1);
+  margin: 40px 0 55px 0;
+}
+@media (max-width: 1205px) {
+  .commonItems {
+    justify-content: space-around;
+  }
+}
+
+.about__container {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage__subtitle {
+  max-width: 652px;
+}
+
+.blog__container {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+}
+.blog__subtitle {
+  max-width: 638px;
+}
+.other__container {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+}
+.other__items {
+  min-height: 750px;
+  align-items: center;
+}
+
+.question {
+}
+.question__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 160px 0 80px 0;
+}
+.question__image {
+  margin: 0 0 0 220px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.question__quote {
+  position: absolute;
+  max-width: 436px;
+  background: #333333;
+  bottom: 24px;
+}
+.quote {
+}
+.quote-text {
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 133%;
+  color: rgba(239, 238, 232, 0.9);
+  padding: 24px 24px 15px 24px;
+}
+.quote-author {
+  color: rgba(239, 238, 232, 0.9);
+  font-family: "Reenie Beanie";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  padding: 0 168px 24px 24px;
+}
+.question__form {
+  max-width: 440px;
+  margin: 0 242px 0 0;
+}
+.question__title {
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  margin: 80px 0 42px 0;
+}
+.common__question {
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 0 16px 20px;
+}
+.question__name {
+}
+
+.question__hr {
+  border-top: 1px solid rgba(51, 51, 51, 0.8);
+  margin: 0 0 32px 0;
+}
+.question__hr-last {
+  margin: 0 0 39px 0;
+}
+.question__email {
+}
+.question__message {
+}
+.question__button {
+  background: #333333;
+
+  padding: 15px 185px 15px 164px;
+}
+.question__button a {
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 133%;
+  color: #efeee8;
+}
+
+@media (max-width: 1415px) {
+  .question__container {
+    display: flex;
+    justify-content: center;
+  }
+  .question__form {
+    max-width: 440px;
+    margin: 0 0 0 0;
+    padding: 15px;
+  }
+  .question__image {
+    margin: 0 0 0 0;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 769px) {
+  .question__container {
+    margin: 80px 0 80px 0;
+  }
+}
+
+@media (max-width: 469px) {
+  .question__title {
+    font-size: 30px;
+  }
+}
+.footer {
+  background: #e4e2d3;
+}
+.footer__container {
+  max-width: 1240px;
+}
+.footer__top {
+}
+.top-footer {
+  height: 198px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.top-footer__logo {
+}
+._ibj {
+}
+.top-footer__links {
+  width: 151px;
+  display: flex;
+  justify-content: space-between;
+}
+.top-footer__item {
+}
+
+.footer_description {
+}
+.description-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.description-footer__desc {
+  max-width: 400px;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 133%;
+}
+.description-footer__columns {
+  display: flex;
+  width: 552px;
+  justify-content: space-between;
+}
+.columns-footer {
+}
+.columns-footer__column {
+}
+.columns-footer__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  margin: 0 0 24px 0;
+}
+.columns-footer__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  margin: 0 0 24px 0;
+}
+@media (max-width: 972px) {
+  .description-footer {
+    justify-content: center;
+  }
+  .description-footer__columns {
+    margin: 25px 0 0 0;
+  }
+}
